@@ -1,0 +1,38 @@
+<html>
+<head>
+
+	<title>Object Finder Web App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+
+  <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body background="bg.jpg">
+<center>
+    <div class="btn btn-info heading">
+    <h1 id="head">AI Object Finder App</h2>
+    <h4>The input name which you will give should match the names in COCO SSD Model then only it will detect the object</h4>
+</div>
+    <br>
+    <h3>Object Name:</h3>
+    <input id="input" type="text">
+    <br><br>
+    <button class="btn btn-primary"onclick="start()" id="start">Start</button>
+    <br>
+    <h3 id="status"class="btn btn-danger"></h3>
+    <h3 id="number_of_objects" class="btn btn-danger"></h3>
+</center>
+<script src="main.js"></script>
+
+</body>
+
+</html>
